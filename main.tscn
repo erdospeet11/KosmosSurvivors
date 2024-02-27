@@ -415,6 +415,7 @@ offset_bottom = 134.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_031sv")
 
 [node name="PanelContainer2" type="PanelContainer" parent="ui/Panel"]
+layout_mode = 0
 offset_left = 83.0
 offset_top = 67.0
 offset_right = 123.0
@@ -422,6 +423,7 @@ offset_bottom = 107.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_031sv")
 
 [node name="PanelContainer3" type="PanelContainer" parent="ui/Panel"]
+layout_mode = 0
 offset_left = 83.0
 offset_top = 115.0
 offset_right = 123.0
@@ -429,6 +431,7 @@ offset_bottom = 155.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_031sv")
 
 [node name="PanelContainer4" type="PanelContainer" parent="ui/Panel"]
+layout_mode = 0
 offset_left = 83.0
 offset_top = 163.0
 offset_right = 123.0
