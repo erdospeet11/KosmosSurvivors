@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c7imk334wvl4i"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_right = 57.0
+offset_bottom = 50.0
+columns = 2
+
+[node name="attack" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "attack:"
+
+[node name="health" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "health:"
+
+[node name="basedmg" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "base damage:"
+
+[node name="asd" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="attack6" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="attack7" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="attack8" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="attack9" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
