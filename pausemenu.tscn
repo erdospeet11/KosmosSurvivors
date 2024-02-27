@@ -19,17 +19,20 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="resume" type="Button" parent="VBoxContainer"]
+modulate = Color(0.529412, 0, 0.976471, 1)
 custom_minimum_size = Vector2(200, 30)
 layout_mode = 2
 text = "Resume
 "
 
 [node name="settings" type="Button" parent="VBoxContainer"]
+modulate = Color(0.529412, 0, 0.976471, 1)
 custom_minimum_size = Vector2(200, 30)
 layout_mode = 2
 text = "Settings"
 
 [node name="quit" type="Button" parent="VBoxContainer"]
+modulate = Color(0.529412, 0, 0.976471, 1)
 custom_minimum_size = Vector2(200, 30)
 layout_mode = 2
 text = "Quit"
