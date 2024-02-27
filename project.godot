@@ -13,6 +13,9 @@ config_version=5
 config/name="KOSMOS SURVIVORS"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0.168627, 0.12549, 0.168627, 1)
+boot_splash/image="res://planet_icon.png"
+boot_splash/fullsize=false
 config/icon="res://icon.svg"
 
 [display]
