@@ -4,6 +4,7 @@ extends Node2D
 @onready var portal = preload("res://portal.tscn")
 
 var custom_data_tile_list = []
+var game_over = false
 
 func _ready():
 	#print("Tilemap layer count:", tilemap.get_used_cells(0))
@@ -15,6 +16,10 @@ func _ready():
 		#print(tilemap.map_to_local(element))
 
 func _process(delta):
+	if game_over:
+		get_tree().change_scene_to_file("res://death.tscn")
+		game_over = false
+
 	if Input.is_action_just_pressed("spawn portal"):
 		var newPortal = portal.instantiate()
 		if newPortal != null:
@@ -24,3 +29,6 @@ func _process(delta):
 			newPortal.position = tilemap.map_to_local(custom_data_tile_list[rand_index])
 			add_child(newPortal)
 
+func _on_area_2d_body_exited(body):
+	#TODO: stop the flow of the game
+	game_over = true

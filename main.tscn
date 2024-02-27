@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cn1aeievv78uq"]
+[gd_scene load_steps=12 format=3 uid="uid://cn1aeievv78uq"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_rqn8n"]
 [ext_resource type="Texture2D" uid="uid://gv084omqdgdn" path="res://sprites/room.png" id="2_f61ug"]
@@ -262,6 +262,9 @@ sources/0 = SubResource("TileSetAtlasSource_7ujw3")
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_031sv"]
 bg_color = Color(0.427451, 0.313726, 0.560784, 1)
 border_color = Color(0.94902, 0.784314, 0.164706, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6akhp"]
+size = Vector2(332, 268)
 
 [node name="Root" type="Node2D"]
 script = ExtResource("1_rqn8n")
@@ -601,3 +604,12 @@ offset_right = -2.0
 offset_bottom = -53.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(112, 96)
+shape = SubResource("RectangleShape2D_6akhp")
+debug_color = Color(0, 0.639216, 0.360784, 0.419608)
+
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
