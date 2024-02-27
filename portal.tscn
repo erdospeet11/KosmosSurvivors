@@ -1,0 +1,150 @@
+[gd_scene load_steps=21 format=3 uid="uid://crj6qw4ho5qqv"]
+
+[ext_resource type="Script" path="res://portal.gd" id="1_k2nog"]
+[ext_resource type="Texture2D" uid="uid://wa24lofxqex3" path="res://portal3-Sheet.png" id="2_hwocq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78cfb"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy8ij"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwuvc"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0mbp"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mr14"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fhlo"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6o6x"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ior0x"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk3uc"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_os60v"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvsuu"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yadq1"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkwy4"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(768, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6dpql"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(832, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dw3xr"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(896, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebcm1"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(960, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8drt"]
+atlas = ExtResource("2_hwocq")
+region = Rect2(1024, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6pc52"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78cfb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy8ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwuvc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0mbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mr14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2fhlo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6o6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ior0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk3uc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_os60v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvsuu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yadq1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkwy4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6dpql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dw3xr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebcm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8drt")
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="portal" type="Area2D"]
+script = ExtResource("1_k2nog")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6pc52")
+autoplay = "default"
+frame = 2
+frame_progress = 0.236681
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
