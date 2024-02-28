@@ -269,28 +269,6 @@ size = Vector2(332, 268)
 [node name="Root" type="Node2D"]
 script = ExtResource("1_penb8")
 
-[node name="HFlowContainer" type="HFlowContainer" parent="."]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 987.0
-offset_top = 608.0
-offset_right = 1152.0
-offset_bottom = 648.0
-grow_horizontal = 0
-grow_vertical = 0
-
-[node name="Label" type="Label" parent="HFlowContainer"]
-layout_mode = 2
-text = "Open Inventory"
-
-[node name="TextureRect" type="TextureRect" parent="HFlowContainer"]
-layout_mode = 2
-texture = ExtResource("2_jqaml")
-expand_mode = 3
-
 [node name="tilemap" type="TileMap" parent="." groups=["tile"]]
 z_index = -1
 tile_set = SubResource("TileSet_kqri8")
@@ -307,7 +285,6 @@ layer_0/tile_data = PackedInt32Array(-131075, 65536, 0, -65539, 65536, 1, -13107
 position = Vector2(147, 57)
 
 [node name="inventory_ui" type="CanvasLayer" parent="."]
-visible = false
 script = ExtResource("5_gw8ul")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="inventory_ui"]
@@ -422,6 +399,18 @@ layout_mode = 2
 [node name="Button5" type="Button" parent="inventory_ui/ScrollContainer/VBoxContainer"]
 custom_minimum_size = Vector2(200, 25)
 layout_mode = 2
+
+[node name="HFlowContainer2" type="HFlowContainer" parent="inventory_ui/ScrollContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="inventory_ui/ScrollContainer/HFlowContainer2"]
+layout_mode = 2
+text = "Open Inventory"
+
+[node name="TextureRect" type="TextureRect" parent="inventory_ui/ScrollContainer/HFlowContainer2"]
+layout_mode = 2
+texture = ExtResource("2_jqaml")
+expand_mode = 3
 
 [node name="Panel" type="Panel" parent="inventory_ui"]
 custom_minimum_size = Vector2(200, 550)
