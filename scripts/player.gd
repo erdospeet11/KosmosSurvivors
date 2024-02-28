@@ -3,11 +3,13 @@ extends CharacterBody2D
 @onready var animator = $AnimatedSprite2D
 @onready var dash_timer = $Timer
 
-var speed = 50  # speed in pixels/sec
+@export var health = 100
+@export var player_speed = 50
+@export var attack_damage = 10
 
 func _process(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
-	velocity = direction * speed
+	velocity = direction * player_speed
 	
 	if direction != Vector2.ZERO:
 		animator.play("walk")

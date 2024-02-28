@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="KOSMOS SURVIVORS"
+config/tags=PackedStringArray("1")
 run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/bg_color=Color(0.168627, 0.12549, 0.168627, 1)
