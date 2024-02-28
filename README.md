@@ -3,7 +3,6 @@
 TODOs:
 	- add slime enemy
 	- add wind enemy
-	- add portal
 	- add weapon
 	- add abilities
 	- add player attributes
