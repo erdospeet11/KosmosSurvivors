@@ -1,5 +1,7 @@
 extends Area2D
 
+
+@export var enemies = []
 #@onready var slime_enemy = preload("res://enemy.tscn")
 #@onready var wind_enemy = preload("res://wind_enemy.tscn")
 @onready var label = $Label

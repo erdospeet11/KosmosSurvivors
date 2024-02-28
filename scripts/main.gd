@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var tilemap = $tilemap
-@onready var portal = preload("res://portal.tscn")
+@onready var portal = preload("res://scenes/portal.tscn")
 
 var custom_data_tile_list = []
 var game_over = false
@@ -17,7 +17,7 @@ func _ready():
 
 func _process(delta):
 	if game_over:
-		get_tree().change_scene_to_file("res://death.tscn")
+		get_tree().change_scene_to_file("res://scenes/death.tscn")
 		game_over = false
 
 	if Input.is_action_just_pressed("spawn portal"):

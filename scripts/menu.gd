@@ -20,7 +20,7 @@ func _process(delta):
 
 func _on_play_pressed():
 	print("start")
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 func _on_settings_pressed():
 	menu.visible = false

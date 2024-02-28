@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wa24lofxqex3"
-path="res://.godot/imported/portal3-Sheet.png-e7e67a02ea6e04fc398d451e3ea6bbe8.ctex"
+uid="uid://dbd2f5gf41y4y"
+path="res://.godot/imported/death.png-8d60f4228657a9aa0475f6f89927d3fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://portal3-Sheet.png"
-dest_files=["res://.godot/imported/portal3-Sheet.png-e7e67a02ea6e04fc398d451e3ea6bbe8.ctex"]
+source_file="res://sprites/death.png"
+dest_files=["res://.godot/imported/death.png-8d60f4228657a9aa0475f6f89927d3fa.ctex"]
 
 [params]
 

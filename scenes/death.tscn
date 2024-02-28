@@ -1,16 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://cwgt25rnrm15"]
 
-[ext_resource type="Texture2D" uid="uid://dbd2f5gf41y4y" path="res://death.png" id="1_6tq2n"]
-[ext_resource type="Script" path="res://death.gd" id="1_8eo8g"]
+[ext_resource type="Script" path="res://scripts/death.gd" id="1_jqtww"]
+[ext_resource type="Texture2D" uid="uid://dbd2f5gf41y4y" path="res://sprites/death.png" id="2_iy7n8"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_8eo8g")
+script = ExtResource("1_jqtww")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(576, 324)
-texture = ExtResource("1_6tq2n")
+texture = ExtResource("2_iy7n8")
 
 [node name="retry" type="Button" parent="CanvasLayer"]
 custom_minimum_size = Vector2(100, 0)

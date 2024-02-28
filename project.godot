@@ -11,12 +11,12 @@ config_version=5
 [application]
 
 config/name="KOSMOS SURVIVORS"
-run/main_scene="res://menu.tscn"
+run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/bg_color=Color(0.168627, 0.12549, 0.168627, 1)
-boot_splash/image="res://planet_icon.png"
+boot_splash/image="res://sprites/planet_icon.png"
 boot_splash/fullsize=false
-config/icon="res://icon.svg"
+config/icon="res://sprites/icon.svg"
 
 [display]
 
@@ -25,6 +25,14 @@ window/vsync/vsync_mode=0
 [dotnet]
 
 project/assembly_name="KOSMOS SURVIVORS"
+
+[file_customization]
+
+folder_colors={
+"res://scenes/": "orange",
+"res://scripts/": "red",
+"res://sprites/": "blue"
+}
 
 [input]
 
