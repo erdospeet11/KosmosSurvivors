@@ -13,7 +13,7 @@ func _ready():
 	quit.connect("pressed", _on_quit_pressed)
 	settings.connect("pressed", _on_settings_pressed)
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("escape") and !menu.visible:
 		menu.visible = true
 		options.visible = false

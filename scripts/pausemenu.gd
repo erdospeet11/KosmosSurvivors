@@ -6,6 +6,6 @@ func _on_quit_pressed():
 func _on_resume_pressed():
 	self.visible = false
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed('escape') and !self.visible:
 		self.visible = true

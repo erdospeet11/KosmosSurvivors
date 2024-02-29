@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var player_speed = 50
 @export var attack_damage = 10
 
-func _process(delta):
+func _process(_delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * player_speed
 	

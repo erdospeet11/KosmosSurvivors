@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://cn1aeievv78uq"]
+[gd_scene load_steps=11 format=3 uid="uid://cn1aeievv78uq"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_penb8"]
-[ext_resource type="Texture2D" uid="uid://q1ks0divgtsh" path="res://sprites/tab_button.png" id="2_jqaml"]
 [ext_resource type="Texture2D" uid="uid://gv084omqdgdn" path="res://sprites/room.png" id="3_ng8ua"]
 [ext_resource type="PackedScene" uid="uid://csl6rt6s7j44x" path="res://scenes/player.tscn" id="4_qwbkh"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="5_gw8ul"]
@@ -399,18 +398,6 @@ layout_mode = 2
 [node name="Button5" type="Button" parent="inventory_ui/ScrollContainer/VBoxContainer"]
 custom_minimum_size = Vector2(200, 25)
 layout_mode = 2
-
-[node name="HFlowContainer2" type="HFlowContainer" parent="inventory_ui/ScrollContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="inventory_ui/ScrollContainer/HFlowContainer2"]
-layout_mode = 2
-text = "Open Inventory"
-
-[node name="TextureRect" type="TextureRect" parent="inventory_ui/ScrollContainer/HFlowContainer2"]
-layout_mode = 2
-texture = ExtResource("2_jqaml")
-expand_mode = 3
 
 [node name="Panel" type="Panel" parent="inventory_ui"]
 custom_minimum_size = Vector2(200, 550)

@@ -10,7 +10,7 @@ var timeout_count = 0
 func _ready():
 	label.set_tooltip_text(str(self.position.x) +" " + str(self.position.y))
 
-func _process(delta):
+func _process(_delta):
 	if timeout_count == 5:
 		queue_free()
 

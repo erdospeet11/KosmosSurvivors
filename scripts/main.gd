@@ -15,7 +15,7 @@ func _ready():
 			custom_data_tile_list.append(element)	
 		#print(tilemap.map_to_local(element))
 
-func _process(delta):
+func _process(_delta):
 	if game_over:
 		get_tree().change_scene_to_file("res://scenes/death.tscn")
 		game_over = false
