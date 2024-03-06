@@ -1,11 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://cn1aeievv78uq"]
+[gd_scene load_steps=13 format=3 uid="uid://cn1aeievv78uq"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_penb8"]
 [ext_resource type="Texture2D" uid="uid://gv084omqdgdn" path="res://sprites/room.png" id="3_ng8ua"]
 [ext_resource type="PackedScene" uid="uid://csl6rt6s7j44x" path="res://scenes/player.tscn" id="4_qwbkh"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="5_gw8ul"]
 [ext_resource type="PackedScene" uid="uid://d4fll0k25cyry" path="res://scenes/pausemenu.tscn" id="6_yq2ur"]
+[ext_resource type="Texture2D" uid="uid://ciw3wtiva7tta" path="res://empy_bar.png" id="7_ir8b0"]
 [ext_resource type="Script" path="res://scripts/Label.gd" id="7_k1eqn"]
+[ext_resource type="Texture2D" uid="uid://cf87xqkog0p21" path="res://full_health_bar.png" id="8_33k4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ujw3"]
 texture = ExtResource("3_ng8ua")
@@ -581,6 +583,22 @@ offset_right = -2.0
 offset_bottom = -53.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="healthBar" type="TextureProgressBar" parent="general_ui"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -266.0
+offset_top = 259.0
+offset_right = -212.0
+offset_bottom = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.84, 1.44)
+texture_under = ExtResource("7_ir8b0")
+texture_over = ExtResource("8_33k4i")
 
 [node name="Area2D" type="Area2D" parent="."]
 
