@@ -2,8 +2,6 @@ extends CharacterBody2D
 
 @onready var animator = $AnimatedSprite2D
 @onready var dash_timer = $Timer
-@onready var sword = $Sprite2D
-
 
 @export var health = 100
 @export var player_speed = 50
@@ -32,9 +30,6 @@ func _process(_delta):
 		print("floor")
 	
 	move_and_slide()
-
-func _physics_process(delta):
-	sword.look_at(get_global_mouse_position())
 
 func _input(_event):
 	#TODO: implement dash cooldown
